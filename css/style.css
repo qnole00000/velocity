@@ -1,25 +1,18 @@
 /* Общее */
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "OpenSans";
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),
-        url("../fonts/Roboto-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    src: local("Roboto"),
-        url("../fonts/Roboto-Medium.woff2") format("woff2");
+    src: local("OpenSans"),
+        url("../fonts/OpenSans.ttf") format("ttf");
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #1C1C1C;
-    color: #FFF;
+    font-family: "OpenSans", sans-serif;
+    background-color: #FFFFFF;
+    color: #8E8E9C;
+    font-size: 14px;
 }
 
 ul {
@@ -29,8 +22,6 @@ ul {
 }
 
 a {
-    text-transform: uppercase;
-    color: #FFF;
     text-decoration: none;
 }
 
@@ -38,12 +29,179 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
+h1,h2,h3,h4,h5,h6 {
     margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.btn--blue {
+    background: rgb(105, 185, 255);
+    border: unset;
+}
+
+
+/* HEADER */
+
+.header {}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.header__logo {
+    color: rgb(105, 185, 255);
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {}
+
+.header__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__item__link {
+    color: rgb(103, 103, 112);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.header__item__link:hover {
+    color: rgb(0, 130, 243);
+}
+
+/* MAIN */
+
+.main {
+    background-image: url("../img/welcome-bg.jpg");
+    padding: 190px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__header {
+    font-size: 59px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.main__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* DO */
+
+.do {
+    text-align: center;
+}
+
+
+.container__do {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.do__header {
+    color: rgb(103, 103, 112);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.do__text {
+    color: rgb(142, 142, 156);
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 62px;
+}
+
+.do__cards {
+    display: flex;
+    gap: 20px;
+}
+
+.do__card {
+    width: 33%;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(220, 235, 247);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 35px 16px 23px;
+}
+
+
+.do__img {
+    box-sizing: border-box;
+
+    border: 1px dashed rgb(46, 157, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card__header {
+    color: rgb(103, 103, 112);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.card__text {
+    color: rgb(106, 133, 156);
+    font-size: 14px;
+    line-height: 25px;
 }
