@@ -23,13 +23,19 @@ ul {
 
 a {
     text-decoration: none;
+    color: rgb(102, 140, 173);
 }
 
 img {
     max-width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -43,7 +49,7 @@ p+p {
 
 
 .container {
-    max-width: 1170px;
+    max-width: 970px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -204,4 +210,242 @@ p+p {
     color: rgb(106, 133, 156);
     font-size: 14px;
     line-height: 25px;
+}
+
+/* SERVICES */
+.services {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #192024;
+
+}
+
+.container__services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.services__header {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.services__text {
+    color: rgb(232, 232, 232);
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-bottom: 77px;
+}
+
+.services__cards {
+    display: flex;
+    gap: 50px;
+}
+
+.services__card {
+    width: 49%;
+}
+
+.services__img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.services__card__header {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.services__card__text {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-bottom: 17px;
+}
+
+/* TAB */
+
+.tab {
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+
+.tab__header {
+    color: rgb(103, 103, 112);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.tab__text {
+    color: rgb(142, 142, 156);
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+}
+
+.tab__btn {
+    border-radius: 4px;
+    background: #92A0AD;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1px 30px;
+    border: unset;
+}
+
+.tab__btn:not(:last-child) {
+    margin-right: 16px;
+}
+
+.tab__btn:hover {
+    background: #2E80B6;
+}
+
+.tab__cards {}
+
+.tab__card {}
+
+.tab__card__img {
+    margin-bottom: 16px;
+}
+
+.tab__card__header {
+    color: rgb(103, 103, 112);
+    font-size: 31px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    margin-bottom: 14px;
+}
+
+.tab__card__text {
+    color: rgb(106, 133, 156);
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+/* tab - css tabs */
+.tab__cards>input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 52px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
+}
+
+/* //// */
+
+/* ABOUT */
+
+.about {
+    margin-bottom: 40px;
+}
+
+.container__about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__column {
+    width: 30%;
+}
+
+.about__header {
+    color: rgb(103, 103, 112);
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about__text {
+    color: rgb(106, 133, 156);
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.about__list {}
+
+.about__item {
+    border-bottom: 1px solid #D5D5E0;
+    padding-bottom: 12px;
+}
+
+.about__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.about__item__social {
+    padding-bottom: 7px;
+}
+
+.about__item__social::before {
+    margin-right: 10px;
+    height: 8px;
+    max-width: 100%;
+}
+
+.social__icon--1::before {
+    content: url("../img/icon/icon-tw.svg");
+}
+
+.social__icon--2::before {
+    content: url("../img/icon/icon-fb.svg");
+}
+
+.social__icon--3::before {
+    content: url("../img/icon/icon-pt.svg");
+}
+
+.social__icon--4::before {
+    content: url("../img/icon/icon-google.svg");
+}
+
+.social__icon--5::before {
+    content: url("../img/icon/icon-wb.svg");
+}
+
+.about__item__link {}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    background-color: #383838;
+}
+
+.footer__text {
+    color: rgb(158, 158, 158);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    padding: 40px 0;
 }

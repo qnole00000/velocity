@@ -7,6 +7,7 @@
     <title>Velocity</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <main class="main">
         <h1 class="main__header">This is Velocity</h1>
         <div class="main__buttons">
-            <a href="#" class="btn btn--blue" >sign up</a>
+            <a href="#" class="btn btn--blue">sign up</a>
             <a href="#" class="btn">Learn more</a>
         </div>
     </main>
@@ -36,23 +37,125 @@
                 <div class="do__card">
                     <img src="./img/icon/card-icon1.svg" alt="" class="do__img">
                     <h3 class="card__header">Graphic Design</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
                 </div>
 
                 <div class="do__card">
                     <img src="./img/icon/card-icon2.svg" alt="" class="do__img">
                     <h3 class="card__header">Awesome code</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
                 </div>
 
                 <div class="do__card">
                     <img src="./img/icon/card-icon3.svg" alt="" class="do__img">
                     <h3 class="card__header">free template</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="services">
+        <div class="container container__services">
+            <h3 class="services__header">services</h3>
+            <p class="services__text">This is some text inside of a div block.</p>
+
+            <div class="services__cards">
+                <div class="services__card">
+                    <img src="./img/services1.jpg" alt="" class="services__img">
+                    <h4 class="services__card__header">SERVICES one</h4>
+                    <p class="services__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+
+                <div class="services__card">
+                    <img src="./img/services2.jpg" alt="" class="services__img">
+                    <h4 class="services__card__header">SERVICES two</h4>
+                    <p class="services__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="tab">
+        <div class="container">
+            <h2 class="tab__header">Tab Section</h2>
+            <p class="tab__text">This is some text inside of a div block.</p>
+            <div class="tab__cards">
+                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-1" class="tab__btn">Tab Button 1</label>
+                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-2" class="tab__btn">Tab Button 2</label>
+                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-3" class="tab__btn">Tab Button 3</label>
+                <div class="tab-content" id="content-1">
+                    <img src="./img/tab1.jpg" alt="" class="tab__card__img">
+                    <h3 class="tab__card__header">Some Title Here</h3>
+                    <p class="tab__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit optio nobis
+                        molestias perspiciatis iste autem earum, voluptate quidem adipisci omnis repellendus sunt non
+                        similique velit quo quae cupiditate saepe minus?</p>
+                </div>
+                <div class="tab-content" id="content-2">
+                    <img src="./img/tab2.jpg" alt="" class="tab__card__img">
+                    <h3 class="tab__card__header">Some Title Here</h3>
+                    <p class="tab__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt
+                        perspiciatis molestias ullam, illo, molestiae aliquam, iste asperiores maiores natus alias
+                        rerum! Nostrum dolores laboriosam quidem, nulla reprehenderit iure ullam.</p>
+                </div>
+                <div class="tab-content" id="content-3">
+                    <img src="./img/tab3.jpg" alt="" class="tab__card__img">
+                    <h3 class="tab__card__header">Some Title Here</h3>
+                    <p class="tab__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut iure
+                        sint labore provident a neque molestias, facilis suscipit? Aut consectetur autem, inventore
+                        dolor minus quae nulla totam numquam rem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container container__about">
+            <div class="about__column">
+                <h3 class="about__header">about velocity</h3>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                    commodo diam libero vitae erat.</p>
+            </div>
+            <div class="about__column">
+                <h3 class="about__header">useful links</h3>
+                <ul class="about__list">
+                    <li class="about__item"><a href="#!" class="about__item__link">Phasellus gravida semper nisi</a>
+                    </li>
+                    <li class="about__item"><a href="#!" class="about__item__link">Suspendisse nisl elit</a></li>
+                    <li class="about__item"><a href="#!" class="about__item__link">Dellentesque habitant morbi</a></li>
+                    <li class="about__item"><a href="#!" class="about__item__link">Etiam sollicitudin ipsum</a></li>
+                </ul>
+            </div>
+            <div class="about__column">
+                <h3 class="about__header">social</h3>
+                <ul class="about__list">
+                    <li class="about__item about__item__social social__icon--1"><a href="#!" class="about__item__link">Twitter</a></li>
+                    <li class="about__item about__item__social social__icon--2"><a href="#!" class="about__item__link">Facebook</a></li>
+                    <li class="about__item about__item__social social__icon--3"><a href="#!" class="about__item__link">Pinterest</a></li>
+                    <li class="about__item about__item__social social__icon--4"><a href="#!" class="about__item__link">Google</a></li>
+                    <li class="about__item about__item__social social__icon--5"><a href="#!" class="about__item__link">Webflow</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Copyright Velocity Inc. Made in Webflow.</p>
+    </footer>
 </body>
+
 </html>
