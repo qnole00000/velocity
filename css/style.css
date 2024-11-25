@@ -71,7 +71,7 @@ p+p {
 }
 
 .btn--blue {
-    background: rgb(105, 185, 255);
+    background-color: rgb(105, 185, 255);
     border: unset;
 }
 
@@ -136,6 +136,7 @@ p+p {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .main__buttons {

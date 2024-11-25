@@ -1,2 +1,164 @@
-@media (max-width: 650px) {
+@media (max-width: 768px) {
+    .tab__text {
+        margin-bottom: 20px;
+    }
 
+    .tab__btn {
+        display: block;
+
+    }
+
+    .tab__btn:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+    .main {
+        padding: 100px 0;
+    }
+
+    .main__header {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .container__do {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .do__text {
+        margin-bottom: 40px;
+    }
+
+    .tab {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 746px) {
+
+
+    .container__about {
+        flex-wrap: wrap;
+    }
+
+    .about__column {
+        width: 48%;
+    }
+
+    .about__column--big {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .do__cards {
+        flex-direction: column;
+    }
+
+    .do__card {
+        width: unset;
+    }
+
+    .container__services {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .services__text {
+        margin-bottom: 40px;
+    }
+
+    .services__cards {
+        flex-direction: column;
+    }
+
+    .services__card {
+        width: unset;
+    }
+
+    /* .container__about {
+        flex-direction: column;
+    }
+
+    .about__column {
+        width: unset;
+    } */
+}
+
+@media (max-width: 480px) {
+
+    .do__header,
+    .services__header,
+    .tab__header,
+    .tab__card__header {
+        font-size: 22px;
+    }
+
+    .do__text,
+    .services__text,
+    .tab__text {
+        font-size: 14px;
+    }
+
+    .tab {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .about__header {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 417px) {
+    .about__column {
+        width: 100%;
+    }
+
+    .about {
+        margin-bottom: 20px;
+    }
+    .about__list {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .main__buttons {
+        flex-direction: column;
+    }
+
+    .main__buttons {
+        width: 100%;
+    }
+
+    .btn {
+        margin: 0 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+
+    }
+
+    .btn--blue {
+        background-color: rgb(105, 185, 255);
+    }
+
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__list {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
